@@ -31,3 +31,18 @@
 
 en:
   hello: "Hello world"
+
+"zh-TW":
+  hello_world: 哈囉
+  activerecord:
+    attributes:
+      ticket:
+        coporation_name: "公司名稱"
+        coporation_id: "公司統編"
+        coporation_phone: "公司電話"
+    # errors:
+    #   models:
+    #     ticket:
+    #       attributes:
+    #         coporation_id:
+    #           not_validate: "您所填寫的統⼀編號有誤，請確認後重新輸入"

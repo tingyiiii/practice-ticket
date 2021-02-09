@@ -1,0 +1,15 @@
+<h1>登記領取復興券</h1>
+
+<% if @ticket.errors.any? %>
+  <% @ticket.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
+<%= form_for(@ticket) do |f| %>
+  <%= f.text_field :coporation_name, placeholder: "公司名稱" %>
+  <%= f.text_field :coporation_id, placeholder: "公司統編" %>
+  <%= f.text_field :coporation_phone, placeholder: "公司電話" %>
+
+  <%= f.submit "登記領取" %>
+<% end %>

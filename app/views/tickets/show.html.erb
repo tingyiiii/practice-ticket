@@ -1,0 +1,22 @@
+<h1>已領取的復興券</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>編號</th>
+      <th>公司名</th>
+      <th>公司統編</th>
+      <th>公司電話</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tickets.each do |ticket| %>
+    <tr>
+      <td><%= ticket.num %></td>
+      <td><%= ticket.coporation_name %></td>
+      <td><%= ticket.coporation_id %></td>
+      <td><%= ticket.coporation_phone %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

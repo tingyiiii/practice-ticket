@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  
+  root 'pages#home'
+
+  resource :tickets, only: [:create, :show]
+  resource :ticket, path: '/', only: [] do
+    get :new, path: '/exchange', as: 'exchange'
+  end
 end
